@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Kazmi | Cloud Infrastructure & FinOps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="hero">
+        <h1>Syed Kazmi</h1>
+        <h2>Cloud Infrastructure | AWS | FinOps | Terraform</h2>
+
+        <p>
+            IT and cloud operations professional with experience in AWS infrastructure,
+            procurement optimization, workflow automation, cloud cost visibility,
+            and cross-functional collaboration.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>🚀 Featured Projects</h3>
+
+        <ul>
+            <li>AWS Cloud Resume Challenge</li>
+            <li>Terraform AWS Infrastructure Deployment</li>
+            <li>Cloud Cost Analysis using SQL</li>
+            <li>FinOps Tagging & Governance Simulation</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>🛠 Technical Skills</h3>
+
+        <ul>
+            <li>AWS (EC2, S3, CloudWatch, Billing)</li>
+            <li>Terraform</li>
+            <li>SQL</li>
+            <li>ServiceNow</li>
+            <li>Python (Foundational)</li>
+            <li>Power Automate</li>
+            <li>SAP</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>📜 Certifications</h3>
+
+        <ul>
+            <li>PMP Certified</li>
+            <li>AWS Certified Cloud Practitioner</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>📈 Current Focus</h3>
+
+        <p>
+            Building expertise in AWS cloud infrastructure, Terraform,
+            FinOps practices, monitoring, reliability engineering,
+            and cloud automation.
+        </p>
+<div class="card">
+    <h3>👀 Visitor Counter</h3>
+
+    <p>
+        Total Visitors:
+        <span id="visitor-count">Loading...</span>
+    </p>
+</div>
+
+<script>
+async function updateCounter() {
+    try {
+        const response = await fetch('https://nxiqeo4vaygmhd6zy7cak23ebe0dhgum.lambda-url.us-east-1.on.aws/');
+
+        const data = await response.json();
+
+        console.log(data);
+
+        document.getElementById('visitor-count').innerText = data.visits;
+
+    } catch (error) {
+        console.error('Counter Error:', error);
+
+        document.getElementById('visitor-count').innerText = 'Error';
+    }
+}
+
+updateCounter();
+</script
+</div>
+
+</body>
+</html>
+    </div>
+<head>
+    <title>Syed Kazmi | Cloud Infrastructure & FinOps</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Syed Kazmi</h1>
+
+<h2>Cloud Infrastructure | FinOps | AWS | Terraform</h2>
+
+<p>
+Experienced IT and cloud operations professional with expertise in AWS infrastructure,
+process optimization, procurement operations, and cloud cost visibility initiatives.
+</p>
+
+<h3>Projects</h3>
+
+<ul>
+    <li>AWS Cloud Resume Challenge</li>
+    <li>Terraform AWS Infrastructure Deployment</li>
+    <li>Cloud Cost Analysis using SQL</li>
+    <li>FinOps Tagging & Governance Simulation</li>
+</ul>
+
+<h3>Certifications</h3>
+
+<ul>
+    <li>PMP Certified</li>
+    <li>AWS Cloud Practitioner</li>
+</ul>
+<section class="projects">
+    <h2>Cloud Projects</h2>
+
+    <div class="project-card">
+
+        <h3>AWS Cloud Cost Governance & Optimization Dashboard</h3>
+
+        <img src="images/dashboard.png"
+             alt="AWS FinOps Dashboard"
+             class="dashboard-image">
+
+        <p>
+            Developed a cloud financial analytics dashboard using AWS,
+            SQL, Terraform, and business intelligence visualization tools
+            to analyze cloud spend, governance compliance, and infrastructure
+            optimization opportunities.
+        </p>
+
+        <ul>
+            <li>AWS Infrastructure Deployment</li>
+            <li>Terraform Infrastructure as Code</li>
+            <li>Lambda Serverless Architecture</li>
+            <li>CloudWatch Monitoring & Alerting</li>
+            <li>SQL-Based Cloud Cost Analytics</li>
+            <li>Cloud Governance & Optimization Reporting</li>
+        </ul>
+
+    </div>
+</section>
+</body>
+</html>
+
