@@ -57,6 +57,8 @@ Features include:
 
 ## Live Website
 
+Deployed through CI/CD
+
 **Portfolio:** https://syedkcloudops.com
 
 ---
@@ -301,4 +303,4 @@ This project provided hands-on experience across multiple cloud engineering disc
 
 **Syed Kazmi**
 
-Cloud Engineer | DevOps | FinOps | Infrastructure Automation
+Cloud Operations | FinOps | Infrastructure Automation
