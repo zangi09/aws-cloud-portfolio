@@ -33,6 +33,42 @@ Features include:
 
 ---
 
+## Screenshots
+
+### Architecture Diagram
+
+This diagram illustrates the complete cloud architecture including DNS, CDN, serverless components, Infrastructure as Code (IaC), CI/CD automation, and FinOps analytics.
+
+![Architecture Diagram](images/architecture-diagram.png)
+
+---
+
+### FinOps Analytics Dashboard
+
+Interactive dashboard built using AWS Cost and Usage Reports (CUR), Amazon Athena, and Looker Studio to visualize cloud spend, optimization opportunities, and resource utilization.
+
+![FinOps Dashboard](images/dashboard.png)
+
+### CI/CD Pipeline
+
+Automated deployment pipeline using GitHub Actions. Every code change pushed to the main branch automatically deploys the website to Amazon S3 and invalidates the CloudFront cache.
+
+![GitHub Actions Deployment](images/github-actions.png)
+
+### CloudFront Distribution
+
+Global content delivery and HTTPS-enabled website distribution using Amazon CloudFront and AWS Certificate Manager.
+
+![CloudFront Distribution](images/cloudfront.png)
+
+### Serverless Visitor Counter
+
+AWS Lambda and DynamoDB power a serverless visitor counter that tracks and displays website visits in real time.
+
+![Lambda Visitor Counter](images/lambda-counter.png)
+
+---
+
 ## Technology Stack
 
 | Category | Technologies |
@@ -114,7 +150,10 @@ The project includes an AWS cost optimization dashboard built from Cost & Usage 
 .
 ├── images/
 │   ├── architecture-diagram.png
-│   └── dashboard.png
+│   ├── dashboard.png
+│   ├── github-actions.png
+│   ├── cloudfront.png
+│   └── lambda-counter.png
 ├── index.html
 ├── styles.css
 ├── script.js
