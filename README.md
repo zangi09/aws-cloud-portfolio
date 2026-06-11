@@ -32,6 +32,23 @@ Features include:
 
 ---
 
+## Project Metrics
+
+| Metric                      | Value                   |
+| --------------------------- | ----------------------- |
+| Cloud Provider              | AWS                     |
+| Infrastructure Provisioning | Terraform               |
+| CI/CD Platform              | GitHub Actions          |
+| CDN                         | Amazon CloudFront       |
+| DNS                         | Amazon Route 53         |
+| Serverless Compute          | AWS Lambda              |
+| Database                    | DynamoDB                |
+| Analytics Platform          | Athena + Looker Studio  |
+| Custom Domain               | syedkcloudops.com       |
+| SSL/TLS                     | AWS Certificate Manager |
+
+---
+
 ## Architecture
 
 ![Architecture Diagram](images/architecture-diagram.png)
@@ -195,6 +212,20 @@ GitHub Actions
       ├── Sync website to S3
       └── Invalidate CloudFront Cache
 ```
+
+---
+
+## Operational Experience Gained
+
+This project provided hands-on experience across multiple cloud engineering disciplines:
+
+* Infrastructure as Code deployment and resource management using Terraform.
+* DNS administration and domain delegation using Route 53.
+* SSL certificate validation and HTTPS configuration using AWS Certificate Manager.
+* Serverless application development using AWS Lambda and DynamoDB.
+* CI/CD automation through GitHub Actions.
+* Cloud cost visibility and optimization using AWS Cost & Usage Reports, Athena, and Looker Studio.
+* Root cause analysis and troubleshooting of production-style issues involving DNS, API communication, CI/CD authentication, and infrastructure configuration.
 
 ---
 
