@@ -39,7 +39,7 @@ Features include:
 
 This diagram illustrates the complete cloud architecture including DNS, CDN, serverless components, Infrastructure as Code (IaC), CI/CD automation, and FinOps analytics.
 
-![Architecture Diagram](images/architecture-diagram.png)
+![Architecture Diagram](images/images_architecture-diagram.png)
 
 ---
 
