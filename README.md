@@ -1,0 +1,223 @@
+# AWS Cloud Portfolio & FinOps Analytics Platform
+
+A production-inspired cloud project demonstrating Infrastructure as Code (Terraform), serverless architecture, CI/CD automation, custom domain management, and FinOps analytics using AWS native services.
+
+---
+
+## Project Overview
+
+This project extends the AWS Cloud Resume Challenge into a cloud infrastructure and cost optimization platform.
+
+Features include:
+
+- Static portfolio website hosted on Amazon S3
+- Global content delivery through Amazon CloudFront
+- Custom domain with Route 53 and HTTPS using AWS Certificate Manager
+- Serverless visitor counter powered by AWS Lambda and DynamoDB
+- Infrastructure provisioned with Terraform
+- Automated deployments using GitHub Actions
+- AWS Cost & Usage Report (CUR) analytics with Athena and Looker Studio
+- Interactive FinOps dashboard highlighting spend, utilization, and optimization opportunities
+
+---
+
+## Architecture
+
+![Architecture Diagram](images/architecture-diagram.png)
+
+---
+
+## Live Website
+
+**Portfolio:** https://syedkcloudops.com
+
+---
+
+## Technology Stack
+
+| Category | Technologies |
+|-----------|--------------|
+| Cloud | AWS |
+| IaC | Terraform |
+| DNS | Route 53 |
+| CDN | CloudFront |
+| Storage | Amazon S3 |
+| Compute | AWS Lambda |
+| Database | DynamoDB |
+| Security | AWS Certificate Manager (ACM) |
+| CI/CD | GitHub Actions |
+| Analytics | AWS CUR, Athena, Looker Studio |
+| Version Control | Git & GitHub |
+
+---
+
+## Infrastructure Components
+
+### Static Website
+
+- Amazon S3 hosts portfolio assets
+- CloudFront distributes content globally
+- Route 53 manages DNS
+- ACM provides HTTPS certificates
+
+### Visitor Counter API
+
+- JavaScript calls Lambda Function URL
+- Lambda updates DynamoDB visitor count
+- Count displayed dynamically on homepage
+
+### Infrastructure as Code
+
+Terraform provisions:
+
+- S3 Bucket
+- CloudFront Distribution
+- Route 53 Records
+- Lambda Function
+- DynamoDB Table
+- IAM Resources
+
+### CI/CD Pipeline
+
+GitHub Actions automatically:
+
+- Deploys website updates to S3
+- Invalidates CloudFront cache
+- Publishes changes without manual intervention
+
+---
+
+## FinOps Dashboard
+
+The project includes an AWS cost optimization dashboard built from Cost & Usage Reports.
+
+### KPIs
+
+- Total Monthly Spend
+- Average Utilization
+- Non-Compliant Resources
+- Estimated Optimization Savings
+- Highest Cost Service
+
+### Visualizations
+
+- Spend by AWS Service
+- Spend by Environment
+- Tagging Compliance
+- High-Risk Optimization Opportunities
+
+---
+
+## Repository Structure
+
+```
+.
+├── images/
+│   ├── architecture-diagram.png
+│   └── dashboard.png
+├── index.html
+├── styles.css
+├── script.js
+├── terraform/
+├── lambda/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+└── README.md
+```
+
+---
+
+## CI/CD Workflow
+
+```
+Developer
+      │
+      ▼
+Git Push
+      │
+      ▼
+GitHub Repository
+      │
+      ▼
+GitHub Actions
+      │
+      ├── Sync website to S3
+      └── Invalidate CloudFront Cache
+```
+
+---
+
+## Troubleshooting & Lessons Learned
+
+### ACM Certificate Validation
+
+- Diagnosed delayed certificate issuance
+- Verified Route 53 DNS validation records
+- Corrected NS/SOA configuration issues
+- Successfully validated root and `www` domains
+
+### GitHub Actions
+
+- Resolved Personal Access Token permission errors
+- Updated PAT with `workflow` scope
+- Validated automated deployment pipeline
+
+### Lambda API
+
+- Investigated browser CORS failures
+- Removed duplicate `Access-Control-Allow-Origin` headers
+- Verified successful client-side API communication
+
+### Route 53
+
+- Troubleshot hosted zone configuration
+- Verified domain delegation and nameserver assignments
+- Restored proper DNS resolution
+
+### CloudFront
+
+- Implemented cache invalidation during deployments
+- Verified updated content propagation globally
+
+### FinOps Dashboard
+
+- Created Athena SQL queries against AWS CUR
+- Built interactive Looker Studio dashboard
+- Added filters, KPI cards, and conditional formatting
+- Identified underutilized resources and potential savings
+
+---
+
+## Key Skills Demonstrated
+
+- AWS Cloud Architecture
+- Terraform Infrastructure as Code
+- Serverless Computing
+- DNS & CDN Configuration
+- CI/CD Automation
+- GitHub Actions
+- Cloud Cost Optimization (FinOps)
+- Athena SQL
+- Dashboard Development
+- Troubleshooting & Root Cause Analysis
+
+---
+
+## Future Enhancements
+
+- Add AWS WAF protection
+- Integrate CloudWatch alarms
+- Implement SNS notifications
+- Add Terraform remote state management
+- Deploy through CodePipeline
+- Build multi-environment infrastructure (Dev/Prod)
+- Add automated cost anomaly detection
+
+---
+
+## Author
+
+**Syed Kazmi**
+
+Cloud Engineer | DevOps | FinOps | Infrastructure Automation
