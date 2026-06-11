@@ -21,6 +21,17 @@ Features include:
 
 ---
 
+## Key Achievements
+
+* Designed and deployed a production-inspired AWS cloud platform using Infrastructure as Code (Terraform).
+* Automated deployments using GitHub Actions CI/CD pipelines.
+* Implemented a serverless visitor tracking solution using AWS Lambda and DynamoDB.
+* Configured Route53, CloudFront, and ACM for secure custom domain hosting.
+* Developed a FinOps analytics dashboard using AWS Cost and Usage Reports, Athena, and Looker Studio.
+* Diagnosed and resolved real-world cloud infrastructure issues involving DNS validation, SSL certificates, CI/CD authentication, and API integrations.
+
+---
+
 ## Architecture
 
 ![Architecture Diagram](images/architecture-diagram.png)
