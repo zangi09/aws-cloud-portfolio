@@ -217,6 +217,19 @@ GitHub Actions
 
 ---
 
+## Monitoring & Incident Response
+
+* Built Amazon CloudWatch dashboards for Lambda and CloudFront operational metrics.
+* Configured alarms for Lambda failures, CloudFront 5XX errors, and website availability.
+* Implemented SNS email notifications for proactive incident detection.
+* Added synthetic availability monitoring for `syedkcloudops.com`.
+* Created an incident-response runbook covering investigation, rollback, and service recovery.
+* Validated monitoring and recovery procedures through controlled testing.
+
+For detailed response procedures, see the [Incident Response Runbook](docs/incident-response-runbook.md).
+
+---
+
 ## Operational Experience Gained
 
 This project provided hands-on experience across multiple cloud engineering disciplines:
