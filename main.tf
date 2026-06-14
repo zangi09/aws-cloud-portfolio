@@ -61,6 +61,10 @@ resource "aws_cloudfront_distribution" "resume_cdn" {
       origin_ssl_protocols = ["TLSv1.2"]
     }
   }
+  aliases = [
+    "syedkcloudops.com",
+    "www.syedkcloudops.com"
+  ]
 
   enabled             = true
   default_root_object = "index.html"
@@ -91,7 +95,9 @@ resource "aws_cloudfront_distribution" "resume_cdn" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn      = "arn:aws:acm:us-east-1:027527476154:certificate/2dfaad18-4055-4951-bf93-d86162b03d57"
+    ssl_support_method       = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2021"
   }
 
   tags = {

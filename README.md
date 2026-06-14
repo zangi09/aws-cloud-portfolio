@@ -153,6 +153,17 @@ GitHub Actions automatically:
 
 ---
 
+## Monitoring & Incident Response
+
+- Implemented Amazon CloudWatch dashboards to monitor Lambda visitor-counter metrics and CloudFront website delivery metrics.
+- Configured Terraform-managed CloudWatch alarms for Lambda errors and CloudFront 5XX error rates.
+- Integrated Amazon SNS email notifications for proactive alerting.
+- Validated monitoring resources through AWS Console review, Terraform apply output, and live site traffic testing.
+- Troubleshot and resolved a Terraform nested resource error in `monitoring.tf` by correctly closing the CloudWatch alarm block before declaring the dashboard resource.
+- Documented incident response steps for website availability, Lambda errors, CloudFront errors, deployment failures, and cost threshold alerts.
+
+---
+
 ## FinOps Dashboard
 
 The project includes an AWS cost optimization dashboard built from Cost & Usage Reports.
@@ -272,10 +283,15 @@ This project provided hands-on experience across multiple cloud engineering disc
 - Verified domain delegation and nameserver assignments
 - Restored proper DNS resolution
 
+### Terraform Monitoring Resource Error
+
+While adding CloudWatch monitoring through Terraform, I encountered a `Blocks of type "resource" are not expected here` error. The issue was caused by accidentally placing the CloudWatch dashboard resource inside the CloudFront alarm resource block. I resolved it by closing the alarm block before declaring the dashboard resource, then reran `terraform fmt`, `terraform validate`, and `terraform apply` successfully.
+
 ### CloudFront
 
 - Implemented cache invalidation during deployments
 - Verified updated content propagation globally
+- After applying Terraform changes, the custom domain temporarily returned a CloudFront 403 error. The issue was caused by CloudFront alias and ACM certificate settings needing to be codified in Terraform instead of only configured manually in the AWS Console. I resolved it by adding both `syedkcloudops.com` and `www.syedkcloudops.com` as CloudFront aliases and attaching an ACM certificate that covered both domains. HTTPS was verified successfully in incognito mode after browser cache caused a stale security warning.
 
 ### Terraform Monitoring
 
