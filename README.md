@@ -241,6 +241,7 @@ This project provided hands-on experience across multiple cloud engineering disc
 * CI/CD automation through GitHub Actions.
 * Cloud cost visibility and optimization using AWS Cost & Usage Reports, Athena, and Looker Studio.
 * Root cause analysis and troubleshooting of production-style issues involving DNS, API communication, CI/CD authentication, and infrastructure configuration.
+* * Resolved Terraform monitoring configuration errors while adding CloudWatch dashboards and alarms through Infrastructure as Code.
 
 ---
 
@@ -275,6 +276,13 @@ This project provided hands-on experience across multiple cloud engineering disc
 
 - Implemented cache invalidation during deployments
 - Verified updated content propagation globally
+
+### Terraform Monitoring
+
+- Resolved Terraform nested resource error in `monitoring.tf` where the CloudWatch dashboard resource was accidentally placed inside the CloudFront alarm resource.
+- Fixed the issue by closing the alarm block before declaring the dashboard resource.
+- Validated the configuration with `terraform fmt` and `terraform validate`.
+- Applied the monitoring update successfully, adding Terraform-managed CloudWatch monitoring resources.
 
 ### FinOps Dashboard
 
