@@ -132,3 +132,18 @@ li {
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
+.project-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #1f6feb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.project-link:hover {
+  background-color: #1158c7;
+}
