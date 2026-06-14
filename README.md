@@ -252,7 +252,7 @@ This project provided hands-on experience across multiple cloud engineering disc
 * CI/CD automation through GitHub Actions.
 * Cloud cost visibility and optimization using AWS Cost & Usage Reports, Athena, and Looker Studio.
 * Root cause analysis and troubleshooting of production-style issues involving DNS, API communication, CI/CD authentication, and infrastructure configuration.
-* * Resolved Terraform monitoring configuration errors while adding CloudWatch dashboards and alarms through Infrastructure as Code.
+* Resolved Terraform monitoring configuration errors while adding CloudWatch dashboards and alarms through Infrastructure as Code.
 
 ---
 
