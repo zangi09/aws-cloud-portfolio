@@ -1,0 +1,17 @@
+billing_month,cloud_provider,account_id,service_name,environment,cost_center,owner,amortized_cost,tag_status
+2026-06,AWS,aws-prod-001,EC2,production,IT-Cloud,CloudOps Team,84200,tagged
+2026-06,AWS,aws-prod-001,S3,production,IT-Cloud,CloudOps Team,18450,tagged
+2026-06,AWS,aws-dev-002,Lambda,development,Engineering,Application Team,6200,partially_tagged
+2026-06,AWS,aws-prod-001,Data Transfer,production,IT-Cloud,Network Team,22400,untagged
+2026-06,Azure,az-prod-101,Virtual Machines,production,Finance-Apps,Platform Team,48750,tagged
+2026-06,Azure,az-dev-202,Storage Accounts,development,Engineering,Application Team,9800,partially_tagged
+2026-06,GCP,gcp-prod-301,Compute Engine,production,Analytics,Data Team,36500,tagged
+2026-06,GCP,gcp-prod-301,Cloud Storage,production,Analytics,Data Team,12450,tagged
+2026-07,AWS,aws-prod-001,EC2,production,IT-Cloud,CloudOps Team,91500,tagged
+2026-07,AWS,aws-prod-001,S3,production,IT-Cloud,CloudOps Team,20100,tagged
+2026-07,AWS,aws-dev-002,Lambda,development,Engineering,Application Team,7800,partially_tagged
+2026-07,AWS,aws-prod-001,Data Transfer,production,IT-Cloud,Network Team,33600,untagged
+2026-07,Azure,az-prod-101,Virtual Machines,production,Finance-Apps,Platform Team,52200,tagged
+2026-07,Azure,az-dev-202,Storage Accounts,development,Engineering,Application Team,11200,partially_tagged
+2026-07,GCP,gcp-prod-301,Compute Engine,production,Analytics,Data Team,38900,tagged
+2026-07,GCP,gcp-prod-301,Cloud Storage,production,Analytics,Data Team,13800,tagged

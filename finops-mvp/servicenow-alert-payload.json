@@ -1,0 +1,16 @@
+{
+  "short_description": "Cloud cost anomaly detected - AWS EC2 spend spike",
+  "description": "AWS EC2 spend increased by 8.4% month over month and is projected to exceed the monthly budget threshold.",
+  "assignment_group": "Cloud Operations",
+  "cloud_provider": "AWS",
+  "account_id": "aws-prod-001",
+  "service_name": "EC2",
+  "environment": "production",
+  "cost_center": "IT-Cloud",
+  "owner": "CloudOps Team",
+  "severity": "Medium",
+  "estimated_monthly_impact": 7300,
+  "recommendation": "Review EC2 usage trend, validate business need, and evaluate rightsizing or scheduling opportunities.",
+  "finops_phase": "Optimize",
+  "workflow_type": "cost_anomaly_review"
+}

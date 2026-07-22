@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinOps MVP Delivery & Adoption Dashboard | Syed Kazmi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="hero">
+        <h1>FinOps MVP Delivery & Adoption Dashboard</h1>
+        <h2>AWS QuickSight-Style Dashboarding | FinOps | ServiceNow | Cloud Cost Visibility</h2>
+
+        <p>
+            This project simulates a Phase 3 FinOps MVP delivery engagement for an enterprise cloud environment.
+            The goal is to demonstrate how a consulting team could deliver persona-based cloud cost dashboards,
+            automated alerting, ServiceNow-aligned workflow concepts, and support documentation to help users
+            understand, adopt, and operate a FinOps capability.
+        </p>
+
+        <p>
+            <a href="index.html" class="project-link">Back to Portfolio</a>
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Business Problem</h3>
+        <p>
+            Enterprise cloud teams often struggle with fragmented cost visibility, inconsistent tagging,
+            unclear ownership, delayed cost anomaly response, and disconnected change-management workflows.
+            Finance, engineering, leadership, and cloud operations teams each need different views of cloud
+            spend in order to make decisions and take action.
+        </p>
+        <p>
+            This project models a FinOps MVP that turns raw cloud cost and usage data into persona-specific
+            dashboards, alerts, and workflow-ready recommendations.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Delivery Context</h3>
+        <p>
+            This project is framed as a Phase 3 MVP delivery effort. In this phase, the focus is not only on
+            building dashboards, but also validating requirements with end users, aligning with existing
+            workflows, documenting administration steps, and supporting adoption after delivery.
+        </p>
+
+        <ul>
+            <li>Validate end-user requirements with finance, engineering, leadership, and CloudOps personas</li>
+            <li>Deliver AWS QuickSight / Quick Suite-style dashboard views</li>
+            <li>Connect FinOps insights to workflow and change-management concepts</li>
+            <li>Provide documentation for support, administration, and adoption</li>
+        </ul>
+    </div>
+
+    <div class="card">
+    <h3>Architecture Overview</h3>
+    <p>
+        The MVP architecture models how cloud cost data could flow from provider billing exports into a normalized
+        multi-cloud data layer, then into AWS QuickSight / Quick Suite-style dashboards, alerting logic, and
+        ServiceNow workflow integration.
+    </p>
+
+    <ul>
+        <li><strong>Data Sources:</strong> AWS Cost and Usage Report, Azure Cost Export, Google Cloud Billing Export</li>
+        <li><strong>Data Layer:</strong> normalized cost table with provider, service, owner, environment, and cost center fields</li>
+        <li><strong>Analytics Layer:</strong> SQL-based aggregation for cost trends, anomalies, budget variance, and tagging gaps</li>
+        <li><strong>Dashboard Layer:</strong> persona-based dashboard views for finance, engineering, leadership, and CloudOps</li>
+        <li><strong>Workflow Layer:</strong> ServiceNow ticket or change request concept for cost anomalies and remediation actions</li>
+        <li><strong>Alerting Layer:</strong> threshold-based alerts for spend spikes, budget variance, untagged spend, and idle resources</li>
+    </ul>
+    </div>
+
+    <div class="card">
+        <h3>Target Personas</h3>
+
+        <ul>
+            <li><strong>Finance:</strong> budget vs actual, forecast variance, showback, cost center reporting</li>
+            <li><strong>Engineering:</strong> service-level cost, usage trends, optimization opportunities</li>
+            <li><strong>Leadership:</strong> executive KPIs, total cloud spend, savings impact, risk areas</li>
+            <li><strong>CloudOps:</strong> anomalies, tagging gaps, alerts, underutilized resources, remediation tracking</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Sample Multi-Cloud Cost Data Model</h3>
+        <p>
+            The MVP uses a simplified normalized cost model that could support AWS, Azure, and Google Cloud cost data.
+            The goal is to standardize cost fields so dashboards and alerts can work across providers.
+        </p>
+
+        <ul>
+            <li><strong>billing_month:</strong> month of usage</li>
+            <li><strong>cloud_provider:</strong> AWS, Azure, or GCP</li>
+            <li><strong>account_id:</strong> cloud account, subscription, or project ID</li>
+            <li><strong>service_name:</strong> EC2, S3, Cloud Storage, Compute Engine, etc.</li>
+            <li><strong>environment:</strong> production, development, test, sandbox</li>
+            <li><strong>cost_center:</strong> business cost center or department</li>
+            <li><strong>owner:</strong> application, engineering, or business owner</li>
+            <li><strong>amortized_cost:</strong> normalized cost for reporting and allocation</li>
+            <li><strong>tag_status:</strong> tagged, partially tagged, or untagged</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Dashboard Views</h3>
+
+        <ul>
+            <li><strong>Executive View:</strong> total spend, forecast, savings, month-over-month trend</li>
+            <li><strong>Finance View:</strong> budget variance, cost center allocation, showback reporting</li>
+            <li><strong>Engineering View:</strong> service-level spend, top cost drivers, optimization opportunities</li>
+            <li><strong>CloudOps View:</strong> alerts, anomalies, tagging gaps, resource cleanup candidates</li>
+        </ul>
+
+        <p>
+            In a production environment, these views could be implemented in AWS QuickSight or AWS Quick Suite using
+            calculated fields, datasets, filters, and row-level security to provide role-specific access.
+
+            <div class="dashboard-grid">
+    <div class="metric-box">
+        <h4>Total Monthly Spend</h4>
+        <p>$248,750</p>
+        <span>+8.4% month over month</span>
+    </div>
+
+    <div class="metric-box">
+        <h4>Forecasted Month-End Spend</h4>
+        <p>$287,400</p>
+        <span>Projected 12% over budget</span>
+    </div>
+
+    <div class="metric-box">
+        <h4>Untagged Spend</h4>
+        <p>$41,200</p>
+        <span>16.5% of monthly cost</span>
+    </div>
+
+    <div class="metric-box">
+        <h4>Optimization Opportunity</h4>
+        <p>$32,800</p>
+        <span>Idle resources and rightsizing</span>
+    </div>
+</div>
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Example SQL Analysis</h3>
+        <p>
+            SQL can be used to aggregate cloud cost by service, owner, environment, cost center, and time period.
+            Example use cases include identifying top cost drivers, budget variance, and tagging gaps.
+        </p>
+
+        <pre><code>SELECT
+  billing_month,
+  cloud_provider,
+  service_name,
+  SUM(amortized_cost) AS total_cost
+FROM cloud_cost_data
+GROUP BY billing_month, cloud_provider, service_name
+ORDER BY total_cost DESC;</code></pre>
+    </div>
+
+    <div class="card">
+        <h3>Python / ETL Concept</h3>
+        <p>
+            Python could support the MVP by ingesting CSV or API-based cloud cost exports, validating required fields,
+            normalizing provider-specific columns, and preparing clean data for dashboards and alerting.
+        </p>
+
+        <pre><code>import pandas as pd
+
+df = pd.read_csv("sample-cost-data.csv")
+
+monthly_cost = (
+  df.groupby(["billing_month", "cloud_provider", "service_name"])["amortized_cost"]
+    .sum()
+    .reset_index()
+)
+
+print(monthly_cost)</code></pre>
+    </div>
+
+    <div class="card">
+        <h3>Automated Alerting Concept</h3>
+        <p>
+            Automated alerts should provide context, not just notifications. A strong FinOps alert should identify
+            what changed, who owns it, the estimated cost impact, severity, and recommended next action.
+        </p>
+
+        <ul>
+            <li>Daily spend spike above threshold</li>
+            <li>Forecasted monthly spend exceeds budget</li>
+            <li>Untagged spend exceeds governance threshold</li>
+            <li>Idle or underutilized resource detected</li>
+            <li>Unusual data transfer or storage growth</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>ServiceNow Integration Concept</h3>
+        <p>
+            FinOps alerts and optimization recommendations can be connected to ServiceNow or other change-management
+            tools. For example, a cost anomaly could automatically create a task or change request with the impacted
+            account, service, owner, cost impact, recommended action, and priority.
+        </p>
+
+        <pre><code>{
+  "short_description": "Cloud cost anomaly detected",
+  "assignment_group": "Cloud Operations",
+  "cloud_provider": "AWS",
+  "service": "EC2",
+  "cost_center": "IT-Cloud",
+  "severity": "Medium",
+  "recommendation": "Review EC2 usage spike and validate business need"
+}</code></pre>
+    </div>
+
+    <div class="card">
+        <h3>Technical Administration & Support Documentation</h3>
+        <ul>
+            <li>Document dashboard ownership, refresh cadence, and access model</li>
+            <li>Define data validation checks for missing tags, owners, or cost centers</li>
+            <li>Document alert thresholds, severity logic, and escalation paths</li>
+            <li>Provide support guidance for dashboard users and administrators</li>
+            <li>Maintain change log for MVP updates and enhancement requests</li>
+        </ul>
+    </div>
+
+    <div class="card">
+    <h3>Project Artifacts</h3>
+    <p>
+        Supporting project files were created to demonstrate the technical components behind the FinOps MVP delivery model.
+    </p>
+
+    <ul>
+        <li><strong>sample-cost-data.csv:</strong> sample normalized multi-cloud cost data</li>
+        <li><strong>sample-sql-queries.sql:</strong> SQL examples for cost trends, tagging gaps, and showback</li>
+        <li><strong>sample-etl-script.py:</strong> Python ETL concept for loading, validating, and summarizing cost data</li>
+        <li><strong>servicenow-alert-payload.json:</strong> sample payload for ServiceNow cost anomaly workflow integration</li>
+    </ul>
+    </div>
+
+    <div class="card">
+        <h3>Interview Talking Point</h3>
+        <p>
+            I built this project to simulate a FinOps MVP delivery engagement. It demonstrates how I would approach
+            persona-based dashboarding, cloud cost data modeling, automated alerting, ServiceNow workflow alignment,
+            requirements gathering, documentation, and adoption support for an enterprise FinOps capability.
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
