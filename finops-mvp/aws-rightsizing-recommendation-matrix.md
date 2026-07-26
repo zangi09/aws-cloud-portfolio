@@ -69,6 +69,6 @@ Each recommendation should include:
 
 ---
 
-## Interview Talking Point
+## Key Takeaway
 
-Rightsizing is broader than resizing EC2 instances. In a FinOps review, I would evaluate compute, storage, databases, serverless, observability, networking, backup, and data transfer costs. For each service, I would look at the cost driver, the usage signal, the optimization lever, and the validation needed before making a recommendation. The goal is to reduce waste without creating reliability, performance, security, or compliance risk.
+Rightsizing is broader than resizing EC2 instances. In a FinOps review, optimization should evaluate compute, storage, databases, serverless, observability, networking, backup, and data transfer costs. Each recommendation should include the cost driver, usage signal, optimization lever, validation needed, and business risk before any change is made.k.

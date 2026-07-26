@@ -128,7 +128,7 @@ S3 rightsizing is not about instance size. It is about matching storage class, r
 ### Validation needed
 - Confirm performance and reliability requirements before reducing memory or changing concurrency.
 
-### Interview talking point
+### Delivery Summary
 Lambda cost optimization requires reviewing memory, duration, invocation volume, and concurrency. Sometimes increasing memory can reduce duration, so the cheapest configuration is not always the smallest memory setting.
 
 ---
