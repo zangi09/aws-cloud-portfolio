@@ -71,4 +71,4 @@ Each recommendation should include:
 
 ## Key Takeaway
 
-Rightsizing is broader than resizing EC2 instances. In a FinOps review, optimization should evaluate compute, storage, databases, serverless, observability, networking, backup, and data transfer costs. Each recommendation should include the cost driver, usage signal, optimization lever, validation needed, and business risk before any change is made.k.
+Rightsizing is broader than resizing EC2 instances. In a FinOps review, optimization should evaluate compute, storage, databases, serverless, observability, networking, backup, and data transfer costs. Each recommendation should include the cost driver, usage signal, optimization lever, validation needed, and business risk before any change is made.
